@@ -1,0 +1,7 @@
+.grid { display:grid; grid-template-columns:1.6fr 1fr; gap:24px; margin-bottom:32px; }
+.mainImage, .secondaryImage { position:relative; overflow:hidden; border-radius:16px; min-height:200px; }
+.mainImage img, .secondaryImage img { object-fit:cover; }
+.side { display:grid; gap:24px; }
+.introduction { border:1px solid var(--line); border-radius:16px; padding:28px; }
+.introduction p { color:var(--muted); margin:16px 0 20px; }
+@media(max-width:760px) { .grid { grid-template-columns:1fr; } .mainImage { aspect-ratio:16/9; } .secondaryImage { aspect-ratio:16/9; } }
